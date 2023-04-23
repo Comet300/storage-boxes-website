@@ -1,13 +1,14 @@
 # storage-boxes-website
 
-This project is meant to create an online presence for a local client, boxe-depozitare.ro _<- live website_
+This project is meant to create an online presence for a local client, [boxe-depozitare.ro](https://boxe-depozitare.ro/) _<- live website_
 Built with vanilla HTML, CSS, JS along with the [EJS](https://ejs.co/) template engine and a Node.js server.
 One of my first projects written after learning the basics of web development.
 
 #### Strenghts:
-- Solid web perfromances, though the addition of GTAG and GTM put a merk on it's lighthouse score.
 - Was fun to build :)
 - Good UX and overall design.
+- Solid web perfromances, though the addition of GTAG and GTM put a merk on it's lighthouse score.
+![Lighthouse score - no GTM, GTag](https://raw.githubusercontent.com/Comet300/storage-boxes-website/media/performance.png)
 #### Shortcomings:
 - No bundler
 - The design is responsive, but poorly implemented (sepparate files for mobile and desktop versions of the website. code is not DRY)
