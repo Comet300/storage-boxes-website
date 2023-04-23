@@ -1,0 +1,28 @@
+<%if(success[0] || error[0]){%>
+<div id="popup-background">
+	<%if(success[0]){%>
+	<div id="form-popup">
+		<%}else{%>
+		<div id="form-popup" class="error">
+			<%}%> <%if(success[0]){%>
+			<img src="/images/message-sent.svg" alt="pictograma formular completat" />
+			<h1>Va multuimim</h1>
+			<p>Mesajul vostru este în drum spre noi. Vă vom contacta in cel mai scurt timp.</p>
+			<%}else{%>
+			<div id="errorIcon">
+				<span class="icon-x_mark"></span>
+			</div>
+			<h1>Oops</h1>
+			<p>A avut loc o problema. Va rugăm să reîncercați mai târziu</p>
+			<%}%>
+
+			<p>Dacă doriți să luați legătura cu noi telefonic, ne puteți suna la următorul număr</p>
+			<a href="tel:+01231234123" title="Sună">
+				<p id="popup-phone"> 0767 676 712 </p>
+			</a>
+
+			<button class="action-button">Continuă</button>
+		</div>
+	</div>
+	<%}%></div
+>

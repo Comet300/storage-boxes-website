@@ -1,0 +1,40 @@
+let imageURLs = Array.from(document.querySelectorAll("#one #gallery .item img")).map((img) => img.src);
+function getNextImg(currentImgURL) {
+	let val = imageURLs.indexOf(currentImgURL);
+	if (val >= imageURLs.length - 1) {
+		return imageURLs[0];
+	}
+	return imageURLs[++val];
+}
+
+function getPrevImg(currentImgURL) {
+	let val = imageURLs.indexOf(currentImgURL);
+	if (val <= 0) {
+		return imageURLs[imageURLs.length - 1];
+	}
+	return imageURLs[--val];
+}
+
+let galleryImageObj = document.querySelector("#galleryModal .content .image img");
+let modalObj = document.querySelector("#galleryModal");
+
+document.querySelectorAll("#one #gallery .item").forEach((item) => {
+	item.addEventListener("click", (e) => {
+		galleryImageObj.src = e.target.parentElement.querySelector("img").src;
+		modalObj.classList.remove("hidden");
+		document.querySelector("body").style.overflow = "hidden";
+	});
+});
+
+function bindExit(){
+	modalObj.classList.add("hidden");
+	document.querySelector("body").style.overflow = "unset";
+};
+
+function bindLeft(){
+	galleryImageObj.src = getPrevImg(galleryImageObj.src);
+};
+
+function bindRight(){
+	galleryImageObj.src = getNextImg(galleryImageObj.src);
+};

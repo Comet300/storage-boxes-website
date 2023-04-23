@@ -1,0 +1,31 @@
+.one{
+    padding-top: 60px;
+    font-weight: 900;
+    line-height: 3.063rem;
+    font-size: 2.25rem;
+    display: block;
+    color: #22262e;
+    margin-bottom: 1rem;
+}
+
+.two{
+    margin-top: 24px;
+    color: #22262e;
+    line-height: 3.125rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+main li{
+    list-style: unset;
+    margin-left: 2rem;
+}
+p{
+    color: #252a4b;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: .75rem;
+}
+
+main{
+    margin: 0 16px;
+}

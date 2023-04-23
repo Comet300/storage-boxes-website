@@ -1,0 +1,171 @@
+
+body{
+    padding-right: 15px; /* Avoid width reflow */
+    height: 100vh;
+}
+
+#one h1{
+    color:#22262E;
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+    margin-top: 60px;
+    font-weight: 700;
+    margin-bottom: 44px;
+}
+
+#one #gallery{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 24px;
+    padding-bottom: 88px;
+}
+
+
+#one #gallery .item{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#one #gallery .item img{
+    height: 100%;
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+#one #gallery .item .overlay span{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color:white;
+}
+
+#one #gallery .item .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:black;
+    top:0;
+    opacity: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+#one #gallery .item .overlay:hover{
+    opacity: .7;
+}
+
+
+footer>div{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#galleryModal{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    background:#252a4b96;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+#galleryModal .side{
+    position: absolute;
+    height: 200px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+#galleryModal .content span{
+    display:inline-block;
+    font-size: 1.875rem;
+    color:#9BA5BB;
+    cursor:pointer;
+    transition:.5s;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#galleryModal .side.left{
+left:0;
+}
+
+#galleryModal .side.right{
+    right:0;
+}
+
+#galleryModal .content .side:hover span{
+    filter:brightness(1.4);
+}
+
+#galleryModal .content span.left{
+    transform: rotate(180deg);
+    left: 0;
+}
+#galleryModal .content span.right{
+    right: 0;
+}
+
+#galleryModal .content{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#galleryModal .content .image{
+    position: relative;
+    max-width: 1440px;
+    max-height: 80vh;
+}
+
+#galleryModal .content .image img{
+    border: 1px solid #9BA5BB;
+    border-radius: 2px; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#galleryModal .content .image span{
+    position: absolute;
+    top:10px;
+    right: 8px;
+    font-size: 24px;
+    z-index: 5;
+    display: block;
+    pointer-events: unset;
+}
+
+#galleryModal .content .image span:hover{
+    filter:brightness(.8)
+}
+
+#galleryModal.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#galleryModal{
+    transition: .5s;
+    transition-timing-function:ease-in-out;
+}
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include('partials/head')%>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "boxe-depozitare.ro",
+            "item": "https://www.boxe-depozitare.ro/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "contact",
+            "item": "https://www.boxe-depozitare.ro/contact"
+          }]
+        }
+    </script>
+
+    <link rel="stylesheet" href="/icons/icons.css">
+    <link rel="stylesheet" href="/mobile/stylesheets/partials.css">
+    <link rel="stylesheet" href="/mobile/stylesheets/contact.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-ID" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <%-include('partials/navbar')%>
+        <%-include('partials/cookie')%>
+            <%-include('partials/formConfirm.ejs')%>
+
+                <main>
+                    <section id="map">
+                        <div>
+                            <a href="/" title="Acasa">Acasa</a>
+                            <span class="icon-arrow"></span>
+                            <p>Contact</p>
+                        </div>
+                    </section>
+
+                    <section id="one">
+                        <div>
+                            <h1>Trimite o cerere!</h1>
+                            <h2>Vrem să vă ajutăm în cel mai bun mod posibil.</h2>
+                            <form action="/email" method="POST">
+
+                                <label for="contact_nume">Nume si prenume / Name and surname</label>
+                                <input required id="contact_nume" type="text" name="nume" placeholder="Nume / Prenume">
+
+                                <label for="contact_tel">Telefon / Phone number</label>
+                                <input required id="contact_tel" type="tel" name="telefon" placeholder="Telefon">
+
+                                <label for="contact_email">Email</label>
+                                <input required id="contact_email" type="email" name="email" placeholder="Email">
+
+                                <label for="contact_txt">Scrieti un mesaj / Write a text message</label>
+                                <textarea id="contact_txt" name="mesaj" cols="30" rows="10"
+                                    placeholder="Mesaj"></textarea>
+
+                                <label for="contact_gdpr">Checkbox: Sunt de acord cu prelucrarea datelor personale
+                                    (GDPR) /
+                                    I agree with the processing of personal data (GDPR)</label>
+                                <label class="checkbox-container">
+                                    <input required type="checkbox" name="gdpr" id="contact_gdpr">
+                                    <span class="checkmark"></span>
+                                    Sunt de acord cu prelucrarea datelor personale (GDPR)
+                                </label>
+                                <button class="action-button">Trimite</button>
+                            </form>
+                        </div>
+                    </section>
+                    <section id="two">
+
+                        <div class="data">
+                            <h3>Birou L-V: 08:00 - 16:00</h3>
+                            <div><span class="icon-pn"></span>
+                                <p>bd. Timisoara, nr. 104E, Sector 6, Bucuresti</p>
+                            </div>
+                            <div><span class="icon-envelope"></span>
+                                <p>admin_contact_email@somemail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            <h3>Persoane de contact:</h3>
+                            <div><span class="icon-man_1"></span>
+                                <p><span class="emphasise">Admin 1</span>01231234123 - Admin</p>
+                            </div>
+                            <div><span class="icon-man_2"></span>
+                                <p><span class="emphasise">Admin 2</span>01231234123 - Business Partener</p>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            <h3>Amplasare depozite:</h3>
+                            <div><span class="special-highlight icon-pn"></span>
+                                <div>
+                                    <p><span class="emphasise">Hala 1,2,3,4</span>Str. Oboga, nr. 15 , Sector 6,
+                                        Bucuresti</p>
+                                    <div class="directions">
+                                        <p>
+                                            Directii Waze: <a
+                                                href="https://www.waze.com/ul?q=DisneylandParis%20-%20Restaurare%20Mobila">CLICK
+                                                AICI</a>
+                                        </p>
+                                        <p>
+                                            Directii Google Maps: <a
+                                                href="https://www.google.com/maps?q=Stocări%20-%20Restaurare%20Mobila">CLICK
+                                                AICI</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><span class="icon-pn"></span>
+                                <div>
+                                    <p><span class="emphasise">Birou, hala 5, hala 6</span>Bd. Timisoara, Nr. 104E,
+                                        (lângă CET
+                                        VEST),
+                                        Sector 6, Bucuresti</p>
+                                    <div class="directions">
+                                        <p>
+                                            Directii Waze: <a
+                                                href="https://www.waze.com/ul?q=DisneylandParis%20-%20Restaurare%20Mobila">CLICK
+                                                AICI</a>
+                                        </p>
+                                        <p>
+                                            Directii Google Maps: <a
+                                                href="https://www.google.com/maps?q=Stocări%20-%20Restaurare%20Mobila">CLICK
+                                                AICI</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </section>
+                    <section id="three">
+                        <div id="google-map">
+                        </div>
+                        <div id="map-subtitle" class="container">*La 500 m de metrou Pacii</div>
+                    </section>
+
+                    </section>
+
+                </main>
+
+                <%-include('partials/footer')%>
+
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=<%=mapConfig.apiKey%>&map_ids=<%=mapConfig.mapId%>">
+                        </script>
+                    <script src="/mobile/scripts/partials.js"></script>
+                    <script src="/mobile/scripts/contact.js"></script>
+</body>
+
+</html>

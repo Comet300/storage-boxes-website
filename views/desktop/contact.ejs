@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%-include('partials/head')%>
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "boxe-depozitare.ro",
+						"item": "https://www.boxe-depozitare.ro/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "contact",
+						"item": "https://www.boxe-depozitare.ro/contact"
+					}
+				]
+			}
+		</script>
+
+		<link rel="stylesheet" href="desktop/stylesheets/partials.css" />
+		<link rel="stylesheet" href="desktop/stylesheets/contact.css" />
+		<link rel="stylesheet" href="icons/icons.css" />
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-ID" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<%-include('partials/navbar')%> <%-include('partials/cookie')%> <%-include('partials/formConfirm.ejs')%>
+		<main>
+			<section id="map">
+				<div>
+					<a href="/" title="Acasa">Acasa</a>
+					<span class="icon-arrow"></span>
+					<p>Contact</p>
+				</div>
+			</section>
+
+			<section id="one">
+				<div>
+					<div id="contact-details" class="container">
+						<div>
+							<h1>Trimite o cerere!</h1>
+							<h2>Vrem să vă ajutăm în cel mai bun mod posibil.</h2>
+							<form action="/email" method="POST">
+								<label for="contact_name">Nume si prenume / Name and surname</label>
+								<input required id="contact_name" type="text" name="nume" placeholder="Nume / Prenume" />
+								<label for="contact_tel">Telefon / Phone number</label>
+								<input required id="contact_tel" type="tel" name="telefon" placeholder="Telefon" />
+								<label for="contact_email">Email</label>
+								<input required id="contact_email" type="email" name="email" placeholder="Email" />
+								<label for="contact_txt">Introduceti un mesaj / Write down a text message</label>
+								<textarea id="contact_txt" name="mesaj" cols="30" rows="10" placeholder="Mesaj"></textarea>
+								<label for="contact_gdpr"
+									>Checkbox: Sunt de acord cu prelucrarea datelor personale (GDPR) / I agree with the processing of personal data (GDPR)
+								</label>
+								<label class="checkbox-container">
+									<input required id="contact_gdpr" type="checkbox" name="gdpr" />
+									<span class="checkmark"></span>
+									Sunt de acord cu prelucrarea datelor personale (GDPR)
+								</label>
+								<button class="action-button">Trimite</button>
+							</form>
+						</div>
+
+						<div>
+							<div class="data">
+								<h3>Birou L-V: 08:00 - 16:00</h3>
+								<div
+									><span class="icon-pn"></span>
+									<p>bd. Timisoara, nr. 104E, Sector 6, Bucuresti</p>
+								</div>
+								<div
+									><span class="icon-envelope"></span>
+									<p>admin_contact_email@somemail.com</p>
+								</div>
+							</div>
+
+							<div class="data">
+								<h3>Persoane de contact:</h3>
+								<div
+									><span class="icon-man_1"></span>
+									<p><span class="emphasise">Admin 1</span>01231234123 - Admin</p>
+								</div>
+								<div
+									><span class="icon-man_2"></span>
+									<p><span class="emphasise">Admin 2</span>01231234123 - Business Partener </p>
+								</div>
+							</div>
+
+							<div class="data">
+								<h3>Amplasare depozite:</h3>
+								<div>
+									<span class="special-highlight icon-pn"></span>
+									<div>
+										<p><span class="emphasise">Hala 1,2,3 și 4</span>Address 1 </p>
+										<div class="directions">
+											<p> Directii Waze: <a href="https://www.waze.com/ul?q=Disneyland%Paris">CLICK AICI</a> </p>
+											<p> Directii Google Maps: <a href="https://www.google.com/maps?q=Depozitare+Ieftin%C4%83">CLICK AICI</a> </p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<span class="icon-pn"></span>
+									<div>
+										<p><span class="emphasise">Hala 5, 6 și Birou</span>Address 2 </p>
+										<div class="directions">
+											<p> Directii Waze: <a href="https://www.waze.com/ul?q=Disneyland%Paris">CLICK AICI</a> </p>
+											<p> Directii Google Maps: <a href="https://www.google.com/maps?q=Depozitare+Ieftin%C4%83">CLICK AICI</a> </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="google-map"> la 500m de metrou pacii </div>
+					<div id="map-subtitle">*La 500 m de metrou Pacii</div>
+				</div>
+			</section>
+		</main>
+
+		<%-include('partials/footer')%>
+		<script src="https://maps.googleapis.com/maps/api/js?key=<%=mapConfig.apiKey%>&map_ids=<%=mapConfig.mapId%>"></script>
+
+		<script src="/desktop/scripts/contact.js"></script>
+		<script src="/desktop/scripts/partials.js"></script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%-include('partials/head')%>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "boxe-depozitare.ro",
+						"item": "https://www.boxe-depozitare.ro/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "sfaturi",
+						"item": "https://www.boxe-depozitare.ro/sfaturi"
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"name": "<%=idArticol%>",
+						"item": "https://www.boxe-depozitare.ro/sfaturi/<%=idArticol%>"
+					}
+				]
+			}
+		</script>
+		<link href=" https://www.boxe-depozitare.ro/sfaturi/<%=idArticol%>" rel="canonical" />
+
+		<link rel="stylesheet" href="/icons/icons.css" />
+		<link rel="stylesheet" href="/mobile/stylesheets/partials.css" />
+		<link rel="stylesheet" href="/mobile/stylesheets/articol.css" />
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-ID" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<%-include('partials/navbar')%> <%-include('partials/cookie')%> <%let content=JSON.parse(article.continut)%>
+		<main>
+			<section id="map">
+				<div>
+					<a href="/" title="Acasa">Acasa</a>
+					<span class="icon-arrow"></span>
+					<a href="/sfaturi" title="Sfaturi si Sugestii">Sfaturi si Sugestii</a>
+					<span class="icon-arrow"></span>
+					<p> <%=content.div[0].h2%> </p>
+				</div>
+			</section>
+
+			<section id="one">
+				<div class="abs">
+					<div class="image-right">
+						<img src="/images/search.webp" alt="Boxe ambalate de boxe-depozitare.ro" />
+					</div>
+				</div>
+				<div class="container">
+					<div id="text">
+						<%content.div.forEach(item=>{%>
+						<div>
+							<h3> <%=item.h2%> </h3>
+							<p> <%=item.p%> </p>
+						</div>
+						<%})%>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<%-include('partials/footer')%>
+
+		<script src="/mobile/scripts/partials.js"></script>
+	</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">
+
+<head style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">
+  <meta charset="UTF-8" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">
+  <title style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">Document</title>
+</head>
+<style style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">
+  img#full{
+    width: 53px;
+    height: 402px;
+    margin-top: 10px;
+  }
+
+  img#short{
+    height: fit-content;
+    margin-top: 15px;
+  }
+
+  .dot .dot-core {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    margin-top: 23%;
+    border-radius: 100%;
+  }
+
+  .dot.active,
+  .dot .dot-core {
+    background: #336bd7;
+  }
+
+  .dot {
+    width: 18px;
+    height: 18px;
+    background: #e8f0fb;
+    border-radius: 100%;
+    display: inline-block;
+  }
+
+  .dot-core {
+    position: relative;
+    z-index: 2;
+  }
+
+  .dot.active .dot-core {
+    background: #e8f0fb;
+  }
+
+  #wrap {
+    width: 100%;
+  }
+
+  #mid-wrap {
+    padding:16px;
+    border:10px solid #336bd7;
+    background: #fff;
+    position: relative;
+  }
+
+  .action-button {
+    display: block;
+    height: 60px;
+    width: 65vw;
+    max-width: 305px;
+    background: #fc6600 0 0 no-repeat padding-box;
+    box-shadow: 0 10px 20px rgba(252, 102, 0, 0.3);
+    border-radius: 4px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.125rem;
+    margin: 0 auto;
+    margin-top: 215px;
+  }
+
+  .action-button#short{
+    margin-top: 60px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .item {
+    margin-left: 15px;
+    height: 36px;
+    margin-bottom: 79px;
+  }
+
+  .item:last-of-type{
+    margin-bottom: 0;
+  }
+
+  .item p {
+    display: inline-block;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 22px;
+  }
+
+  .item div{
+    margin-left: 20px;
+    margin-top: 7px;
+    line-height: 1.2rem;
+    max-height: 200px;
+
+  }
+
+  .item:last-of-type div{
+    overflow: auto;
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #22262e;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .heavy {
+    font-weight: 600;
+  }
+
+  a {
+    color: #22262e;
+    text-decoration: none;
+  }
+
+  #flex{
+    display:flex;
+  }
+</style>
+
+<body style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">
+
+  <div id="wrap" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;width: 100%;">
+    <div id="mid-wrap" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;padding: 16px;border: 10px solid #336bd7;background: #fff;position: relative;">
+      <%if(locals.mesaj){%><h1 style="font-family: Arial, Helvetica, sans-serif;color: #22262e;text-align: center;"> <%var a = nume; a=nume.split(' ')[0];%> <%=a%> asteapta raspunsul tau</h1><%}else{%>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;color: #22262e;text-align: center;"><%var a = nume; a=nume.split(' ')[0];%><%=a%> asteapta sa fie contactat(ă)</h1>
+      <%}%>
+      <div id="flex" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;display: flex;">
+
+        <%if(locals.mesaj){%>
+        <img id="full" src="https://i.ibb.co/k5hwbsv/email.png" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;width: 53px;height: 402px;margin-top: 10px;">
+        <%}else{%>
+        <img id="short" src="https://i.ibb.co/7ygyPbm/email-short.png" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;height: fit-content;margin-top: 15px;">
+        <%}%>
+      <div style="font-family: Arial, Helvetica, sans-serif;color: #22262e;">
+
+      <div class="item" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 15px;height: 36px;margin-bottom: 79px;">
+        <p style="font-family: Arial, Helvetica, sans-serif;color: #22262e;display: inline-block;margin: 0;margin-left: 20px;margin-top: 22px;">
+          <span class="heavy" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;font-weight: 600;">Nume:</span>
+          <div style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 20px;margin-top: 7px;line-height: 1.2rem;max-height: 200px;"><%=nume%></div>
+        </p>
+      </div>
+
+      <div class="item" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 15px;height: 36px;margin-bottom: 79px;">
+        <p style="font-family: Arial, Helvetica, sans-serif;color: #22262e;display: inline-block;margin: 0;margin-left: 20px;margin-top: 22px;">
+          <span class="heavy" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;font-weight: 600;">Telefon:</span>
+          <div style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 20px;margin-top: 7px;line-height: 1.2rem;max-height: 200px;"><%=telefon%></div>
+        </p>
+      </div>
+
+      <div class="item" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 15px;height: 36px;margin-bottom: 79px;">
+        <p style="font-family: Arial, Helvetica, sans-serif;color: #22262e;display: inline-block;margin: 0;margin-left: 20px;margin-top: 22px;">
+          <span class="heavy" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;font-weight: 600;">Email:</span>
+          <div style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 20px;margin-top: 7px;line-height: 1.2rem;max-height: 200px;"><%=email%></div>
+        </p>
+      </div>
+
+      <%if(locals.mesaj){%>
+      <div class="item" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 15px;height: 36px;margin-bottom: 79px;">
+        <p style="font-family: Arial, Helvetica, sans-serif;color: #22262e;display: inline-block;margin: 0;margin-left: 20px;margin-top: 22px;">
+          <span class="heavy" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;font-weight: 600;">Mesaj:</span>
+          <div style="font-family: Arial, Helvetica, sans-serif;color: #22262e;margin-left: 20px;margin-top: 7px;line-height: 1.2rem;max-height: 200px;"><%=mesaj%></div>
+        </p>
+      </div>
+      <%}%>
+
+    </div>
+    </div>
+    <%if(locals.mesaj){%>
+      <a href="mailto:<%=email%>" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;text-decoration: none;"><button class="action-button" style="font-family: Arial, Helvetica, sans-serif;color: #fff;display: block;height: 60px;width: 65vw;max-width: 305px;background: #fc6600 0 0 no-repeat padding-box;box-shadow: 0 10px 20px rgba(252, 102, 0, 0.3);border-radius: 4px;border: 0;cursor: pointer;font-size: 1.125rem;margin: 0 auto;margin-top: 215px;">Raspunde</button></a>
+      <%}else{%>
+        <a href="mailto:<%=email%>" style="font-family: Arial, Helvetica, sans-serif;color: #22262e;text-decoration: none;"><button id="short" class="action-button" style="font-family: Arial, Helvetica, sans-serif;color: #fff;display: block;height: 60px;width: 65vw;max-width: 305px;background: #fc6600 0 0 no-repeat padding-box;box-shadow: 0 10px 20px rgba(252, 102, 0, 0.3);border-radius: 4px;border: 0;cursor: pointer;font-size: 1.125rem;margin: 0 auto;margin-top: 60px;">Raspunde</button></a>
+<%}%>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+#one h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color:#22262E;
+    padding-top:60px;
+    margin-bottom: 8px;
+}
+
+#one h2{
+    font-weight: 600;
+    color:#252A4B;
+    margin-bottom: 36px;
+}
+
+#one{
+    margin-bottom: 32px;
+}
+
+#two .data h3{
+    font-size: 1.125rem;
+    line-height: 3.125rem;
+    color:#22262E;
+    font-weight: 700;
+}
+
+#two .data{
+margin-bottom: 36px;
+}
+
+#two .data span{
+    font-size: 2rem;
+    color:#336BD7;
+    margin-right: 32px;
+}
+
+#two .data>div{
+    display:flex;
+    margin-bottom: 16px;
+}
+
+.special-highlight{
+    color:#FC6600 !important;
+}
+
+#three{
+    margin:unset;
+    margin-top:32px;
+}
+
+#google-map{
+    width: 100%;
+    height: 733px;
+}
+
+#map-subtitle{
+    margin:16px 0px 32px 16px;
+}
+
+.directions{
+	margin-top:15px;
+}
+
+.directions p{
+	max-width: 274px;
+	word-break: break-word;
+	margin-bottom: 5px;
+}
+
+.directions a{
+	font-weight: 600;
+	color: #336bd7;
+}

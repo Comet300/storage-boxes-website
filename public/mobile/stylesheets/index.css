@@ -1,0 +1,543 @@
+#one {
+	background: #447ae3;
+	margin: unset;
+	color: #fff;
+	position: relative;
+}
+#one h1 {
+	margin-bottom: 16px;
+	padding-top: 100px;
+}
+
+#one h1 > span > div {
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+#one h1 > span {
+	display: flex;
+	margin-bottom: 8px;
+}
+#one h1 span > span {
+	color: #fc6600;
+	font-size: 1.75rem;
+	margin-right: 10px;
+}
+
+#one h1,
+#one p {
+	position: relative;
+	z-index: 2;
+}
+#one p {
+	width: 224px;
+	line-height: 1.375rem;
+	margin-bottom: 22px;
+}
+#one form {
+	padding-bottom: 56px;
+	position: relative;
+	z-index: 2;
+}
+#one #box-right {
+	height: 254px;
+	position: absolute;
+	top: 20px;
+	right: -195px;
+}
+#two h2 {
+	font-size: 2.25rem;
+	font-weight: 700;
+	line-height: 3.125rem;
+	margin-top: 60px;
+	color: #22262e;
+}
+#two > p,
+#two h2 {
+	margin-bottom: 32px;
+}
+#two > p {
+	color: #252a4b;
+	line-height: 1.375rem;
+	width: 320px;
+}
+#scroll-animation {
+	margin-top: 62px;
+	color: #9ba5bb;
+	position: relative;
+	margin-bottom: 62px;
+}
+#scroll-animation .item .icon span {
+	font-size: 4rem;
+	margin-right: 1rem;
+	color: #9ba5bb;
+	transition: 0.5s;
+}
+#scroll-animation .item {
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin-bottom: 40px;
+	width: 100%;
+}
+#scroll-animation .item:last-of-type {
+	margin-bottom: unset;
+}
+#scroll-animation .item p {
+	font-size: 1rem;
+	line-height: 1.375rem;
+	font-weight: 600;
+	color: #9ba5bb;
+	transition: 0.5s;
+	width: 208px;
+}
+#scroll-animation .item.active p {
+	color: #252a4b;
+}
+#scroll-animation .item.active .icon span {
+	color: #336bd7;
+}
+#scroll-animation .item:first-of-type p,
+#scroll-animation .item:nth-of-type(2) p,
+#scroll-animation .item:nth-of-type(3) p {
+	width: 208px;
+}
+#scroll-animation .item:nth-of-type(4) p {
+	width: 218px;
+}
+#scroll-animation .item .dot {
+	position: absolute;
+	right: 0;
+}
+#two {
+	position: relative;
+}
+#two .lines .active {
+	height: 294px;
+	transition: 1s;
+	position: absolute;
+	z-index: -1;
+	background: #fff;
+	background-image: linear-gradient(to bottom, #336bd7 33%, rgba(255, 255, 255, 0) 20%);
+	background-position: left;
+	background-size: 3px 15px;
+	background-repeat: repeat-y;
+	width: 3px;
+	left: 2px;
+}
+#two .lines .hide {
+	position: absolute;
+	top: 45px;
+	right: 11px;
+	width: 10px;
+	height: 0;
+	overflow: hidden;
+	max-height: 294px;
+	transition: 0.5s;
+}
+#two .lines .disabled {
+	height: 294px;
+	position: absolute;
+	top: 45px;
+	right: 16px;
+	z-index: -2;
+	background-image: linear-gradient(to bottom, #e9f1fb 33%, rgba(255, 255, 255, 0) 20%);
+	background-position: left;
+	background-size: 3px 15px;
+	width: 3px;
+	background-repeat: repeat-y;
+}
+#two .dot {
+	transition: 0.7s;
+}
+#three {
+	margin: unset;
+}
+#three > div > h3 {
+	color: #22262e;
+	font-size: 2.25rem;
+	font-weight: 700;
+	line-height: 3.125rem;
+	margin-bottom: 24px;
+}
+#three > div > p {
+	margin-bottom: 24px;
+	line-height: 1.375rem;
+	color: #252a4b;
+}
+#car-animation {
+	max-width: 1440px;
+	position: relative;
+	margin-top: 32px;
+	height: 3rem;
+	margin-bottom: 60px;
+}
+#car-animation .lines,
+#pickup-track .lines {
+	width: 100%;
+	position: absolute;
+	top: 1rem;
+	height: 3px;
+	overflow: hidden;
+}
+
+#pickup-track .lines {
+	top: unset;
+	z-index: 1;
+}
+
+#car-animation .lines .hide,
+#pickup-track .lines .hide {
+	width: calc(50% - 42px);
+	overflow: hidden;
+	transition: 3s;
+	position: absolute;
+	transition-timing-function: ease-in-out;
+}
+#car-animation .lines .active,
+#pickup-track .lines .active {
+	background: #fff;
+	position: relative;
+	z-index: -1;
+	width: 1050px;
+	background-image: linear-gradient(to right, #336bd7 33%, rgba(255, 255, 255, 0) 20%);
+	background-position: top;
+	background-size: 15px 3px;
+	background-repeat: repeat-x;
+	height: 3px;
+}
+#car-animation .lines .disabled,
+#pickup-track .lines .disabled {
+	width: 100%;
+	z-index: -2;
+	height: 3px;
+	left: 0;
+	background-image: linear-gradient(to right, #e9f1fb 33%, rgba(255, 255, 255, 0) 20%);
+	background-position: top;
+	background-size: 15px 3px;
+	background-repeat: repeat-x;
+}
+#car-animation #moveable-car,
+#car-animation .lines .disabled,
+#pickup-track .car,
+#pickup-track .lines .disabled {
+	position: absolute;
+	transition: 3s;
+	transition-timing-function: ease-in-out;
+}
+#car-animation #moveable-car {
+	height: 4.5rem;
+	top: -1.5rem;
+	width: 10.5rem;
+	background: url(/images/van.webp);
+	background-size: cover;
+	left: calc(50% - 84px);
+}
+#car-animation.visible #moveable-car {
+	left: 1005px;
+}
+#car-animation.visible .lines .hide,
+#pickup-track.visible .lines .hide {
+	width: 1050px;
+}
+#car-animation.visible .lines .disabled,
+#pickup-track.visible .lines .disabled {
+	left: 525px;
+}
+#four {
+	background: #336bd7;
+	margin: unset;
+	color: #fff;
+}
+#four h3 {
+	font-size: 2.5rem;
+	line-height: 3.125rem;
+	font-weight: 700;
+	padding-top: 24px;
+	margin-bottom: 16px;
+}
+#four > div > p {
+	line-height: 1.375rem;
+	margin-bottom: 16px;
+}
+#four .grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	padding-bottom: 3.25rem;
+}
+#four .grid .cell {
+	height: 8.5rem;
+	width: 100%;
+	background: #fff;
+	border-radius: 2px;
+}
+#four .grid .cell .content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+}
+#four .grid .cell .content span {
+	font-size: 4.25rem;
+	color: #336bd7;
+	margin-right: 12px;
+	margin-left: 8px;
+}
+#four .grid .cell .content p {
+	color: #252a4b;
+	width: 60vw;
+	line-height: 1.563rem;
+	height: max-content;
+	min-width: 228px;
+}
+#four #pickup-track {
+	position: relative;
+	padding-bottom: 24px;
+}
+#four #pickup-track .pickup {
+	position: relative;
+	padding-bottom: 46px;
+}
+#four #pickup-track .pickup .line {
+	width: 100%;
+	border: 3px dashed #fff;
+}
+#four #pickup-track .pickup .car {
+	background: url(/images/truck.webp);
+	height: 4.75rem;
+	width: 10.75rem;
+	background-size: cover;
+	position: absolute;
+	transition: 2s;
+	transition-timing-function: ease-out;
+	top: -39px;
+	left: calc(50% - 84px);
+	z-index: 2;
+}
+#four #pickup-track.visible .pickup .car {
+	left: 258px;
+}
+#four #pickup-track p {
+	color: #fff;
+	font-weight: 600;
+	line-height: 1.563rem;
+	font-size: 1.125rem;
+	margin-bottom: 16px;
+}
+#five > h3 {
+	line-height: 2.75rem;
+	font-size: 2.25rem;
+	font-weight: 700;
+	margin-bottom: 24px;
+	margin-top: 60px;
+	color: #252a4b;
+}
+#five > p {
+	line-height: 1.563rem;
+	color: #252a4b;
+}
+#five > p {
+	margin-bottom: 21px;
+}
+#five > p:last-of-type {
+	margin-bottom: 42px;
+}
+#five > div {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+#five > div .item {
+	display: flex;
+	margin-bottom: 36px;
+	align-items: center;
+}
+#five > div .item:last-of-type {
+	margin-bottom: unset;
+}
+#five > div .item span {
+	font-size: 4rem;
+	color: #336bd7;
+	margin-right: 25px;
+}
+#five > div .item h4 {
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.375rem;
+	margin-bottom: 6px;
+}
+#five > div .item p {
+	font-size: 0.875rem;
+	line-height: 1.313rem;
+}
+#six {
+	margin: unset;
+	background: #336bd7;
+}
+#six > .container {
+	padding-top: 45px;
+	margin-bottom: 32px;
+}
+#six > .container > p {
+	line-height: 2.063rem;
+	font-size: 1.5rem;
+	color: #fff;
+}
+#six > .container > p:first-of-type {
+	margin-bottom: 16px;
+}
+#six .graphics {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	background: rgba(0, 0, 0, 0.05);
+	height: 134px;
+}
+#six .graphics .fivePercent,
+#six .graphics .tenPercent {
+	display: flex;
+	align-items: center;
+}
+#six .graphics .fivePercent {
+	margin-left: 45px;
+}
+#six .graphics .tenPercent {
+	margin-right: 30px;
+}
+#six .graphics .mid-slash {
+	position: relative;
+	background: #336bd7;
+	width: 70px;
+}
+#six .graphics .afterFive {
+	border-width: 134px 62px 0 0;
+}
+#six .graphics .afterFive,
+#six .graphics .beforeTen {
+	position: absolute;
+	content: "";
+	top: 0;
+	border-color: rgba(0, 0, 0, 0.05) transparent;
+	border-style: solid;
+}
+#six .graphics .beforeTen {
+	left: 8px;
+	border-width: 0 0 134px 62px;
+}
+#six .graphics .tenPercent img {
+	height: 68px;
+}
+#six .graphics .fivePercent img {
+	position: relative;
+	height: 54px;
+}
+#seven {
+	margin: unset;
+	background: #f0f3f8;
+	margin-top: 60px;
+	padding-bottom: 24px;
+	margin-bottom: 60px;
+}
+#seven > div > h3 {
+	color: #22262e;
+	line-height: 4.875rem;
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+#seven #controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+#seven #controls * {
+	color: #9ba5bb;
+}
+#seven #controls a {
+	text-decoration: underline;
+	line-height: 1.563rem;
+	font-size: 1.125rem;
+}
+#seven #controls span {
+	font-size: 1.875rem;
+	display: inline-block;
+	cursor: pointer;
+}
+#seven #controls span:first-of-type {
+	transform: rotate(180deg);
+	margin-right: 20px;
+}
+#seven .article {
+	background: #fff;
+	padding: 24px 8px;
+	display: none;
+}
+#seven .article .hide {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#seven .article.visible {
+	display: block;
+}
+
+#seven .article img {
+	width: 100%;
+	height: 100%;
+	max-height: 490px;
+	max-width: 490px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#seven .article h4 {
+	margin-top: 12px;
+	color: #22262e;
+	line-height: 3.063rem;
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+#seven .article p {
+	color: #252a4b;
+	margin-bottom: 16px;
+	line-height: 1.563rem;
+}
+#seven .article a {
+	color: #336bd7;
+	text-decoration: underline;
+	font-size: 1.125rem;
+	line-height: 1.563rem;
+	font-weight: 700;
+}
+
+main li {
+	list-style: none;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: 1.3rem;
+	color: #252a4b;
+	margin-bottom: 12px;
+}
+
+#prezentare h4 {
+	font-size: 2.25rem;
+	font-weight: 700;
+	line-height: 3.125rem;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	color: #22262e;
+}
+
+#prezentare iframe {
+	width: 100%;
+	display: block;
+	height: auto;
+	aspect-ratio: 16/9;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://boxe-depozitare.ro/</loc>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/preturi</loc>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/galerie</loc>
+        <image:image>
+            <image:loc>https://www.boxe-depozitare.ro/images/galerie1.webp</image:loc>
+            <image:geo_location>Bucharest, Romania</image:geo_location>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.boxe-depozitare.ro/images/galerie2.webp</image:loc>
+            <image:geo_location>Bucharest, Romania</image:geo_location>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.boxe-depozitare.ro/images/galerie3.webp</image:loc>
+            <image:geo_location>Bucharest, Romania</image:geo_location>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.boxe-depozitare.ro/images/galerie4.webp</image:loc>
+            <image:geo_location>Bucharest, Romania</image:geo_location>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.boxe-depozitare.ro/images/galerie5.webp</image:loc>
+            <image:geo_location>Bucharest, Romania</image:geo_location>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.boxe-depozitare.ro/images/galerie6.webp</image:loc>
+            <image:geo_location>Bucharest, Romania</image:geo_location>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/sfaturi</loc>
+        <changefreq>always</changefreq>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/mutari</loc>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/contact</loc>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/spatii-de-depozitare-de-inchiriat-in-bucuresti-sector-6</loc>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/inchiriere-spatiu-de-depozitare-si-boxe-de-inchiriat</loc>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/boxa-depozitare-de-inchiriat-in-bucuresti</loc>
+    </url>
+
+    <url>
+        <loc>https://boxe-depozitare.ro/termeni-si-conditii</loc>
+    </url>
+</urlset> 

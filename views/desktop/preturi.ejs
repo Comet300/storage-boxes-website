@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%-include('partials/head')%>
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "boxe-depozitare.ro",
+						"item": "https://www.boxe-depozitare.ro/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "preturi",
+						"item": "https://www.boxe-depozitare.ro/preturi"
+					}
+				]
+			}
+		</script>
+
+		<link rel="stylesheet" href="/desktop/stylesheets/partials.css" />
+		<link rel="stylesheet" href="/desktop/stylesheets/preturi.css" />
+		<link rel="stylesheet" href="/icons/icons.css" />
+	</head>
+
+	<body onload="bindSmoothScroll()">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-ID" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<%-include('partials/navbar')%> <%-include('partials/cookie')%> <%-include('partials/formConfirm.ejs')%>
+
+		<main>
+			<section id="map">
+				<div>
+					<a href="/" title="Acasa">Acasa</a>
+					<span class="icon-arrow"></span>
+					<p>Preturi</p>
+				</div>
+			</section>
+
+			<section id="one">
+				<h1 class="section-header">Costuri si dimensiuni boxe</h1>
+				<h2 class="section-sub"
+					>Fie că te muți sau iți renovezi casa, sau pur și simplu nu mai ai destul spațiu acasă sau la birou și vrei să știi că lucrurile tale sunt depozitate în
+					condiții de siguranță, cea mai bună alegere este BoxeDepozitare.ro</h2
+				>
+				<div class="product-flex">
+					<div class="item">
+						<div class="wrap">
+							<h4>Boxă Model 1 - Extra Large</h4>
+							<div class="content">
+								<img src="/images/box_600.webp" alt="poza cu o boxa de depozitare, 500 pe 200 de centimetri" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 600cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>30m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 4 – 5 camere</p>
+										</div>
+									</div>
+									<p class="price">660 lei / lună</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="wrap">
+							<h4>Boxă Model 2 - Large</h4>
+							<div class="content">
+								<img src="/images/box_500.webp" alt="poza cu o boxa de depozitare, 400 pe 200 de centimetri" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 500cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>25m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 3 – 4 camere</p>
+										</div>
+									</div>
+									<p class="price">550 lei / lună</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="wrap">
+							<h4>Boxă Model 3 - Medium</h4>
+							<div class="content">
+								<img src="/images/box_400.webp" alt="poza cu o boxa de depozitare, 300 pe 200 de centimetri" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 400cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>20m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 2 – 3 camere</p>
+										</div>
+									</div>
+									<p class="price">440 lei / lună</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="wrap">
+							<h4>Boxă Model 4 - Medium</h4>
+							<div class="content">
+								<img src="/images/box_300.webp" alt="poza cu o boxa de depozitare, 300 pe 200 de centimetri" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 300cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>20m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 1 – 2 camere</p>
+										</div>
+									</div>
+									<p class="price">330 lei / lună</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="wrap">
+							<h4>Boxă Model 5 - Small</h4>
+							<div class="content">
+								<img src="/images/box_200.webp" alt="poza cu o boxa de depozitare, 200 pe 200 de centimetri" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 200cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>10m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 1 – 2 camere</p>
+										</div>
+									</div>
+									<p class="price">220 lei / lună</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h4
+					>*Se achită minim o lună + o lună garanție (care se va restitui la finalul colaborării), fară alte costuri ascunse sau suplimentare pe toata perioada
+					colaborarii.</h4
+				>
+				<h4>*Rezilierea contractului se poate face oricând doriți dvs.</h4>
+			</section>
+
+			<section id="two">
+				<h3 class="section-header">Materiale de impachetat</h3>
+				<!--fost h1! stylesheet neactualizat-->
+				<p class="section-sub"
+					>Fie că te muți sau iți renovezi casa, sau pur și simplu nu mai ai destul spațiu acasă sau la birou și vrei sa știi că lucrurile tale sunt depozitate în
+					condiții de siguranță, cea mai bună alegere este BoxeDepozitare.ro</p
+				>
+				<div class="product-flex">
+					<div class="item">
+						<div class="wrap">
+							<h4>Office Box</h4>
+							<div class="content">
+								<img src="/images/box_500.webp" alt="Cutie clasica de carton pentru organizarea obiectelor" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 500cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>25m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 3 – 4 camere</p>
+										</div>
+									</div>
+									<p class="price">2.00 lei / m2</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="wrap">
+							<h4>Banda adeziva</h4>
+							<div class="content">
+								<img src="/images/box_400.webp" alt="Banda adeziva utilizata pentru o impachetare usoara si rapida" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 400cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>20m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 2 – 3 camere</p>
+										</div>
+									</div>
+									<p class="price">2.00 lei / m2</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="wrap">
+							<h4>Folie cu bule de aer</h4>
+							<div class="content">
+								<img src="/images/box_300.webp" alt="Folie cu bule de aer utilizata pentru a preveni daunele accidentale asupra obiectelor" />
+								<div class="details">
+									<div class="specs">
+										<p class="description">
+											Se poate folosi pentru impachetarea articolelor fragile. Bulele umplute cu aer apara produsele de socuri si lovituri.
+										</p>
+									</div>
+									<p class="price">2.00 lei / m2</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="wrap">
+							<h4>Folie stretch</h4>
+							<div class="content">
+								<img src="/images/box_200.webp" alt="Folie stretch utilizata pentru impachetare" />
+								<div class="details">
+									<div class="specs">
+										<div>
+											<h3>Dimensiuni:</h3>
+											<p>Lungime: 200cm</p>
+											<p>Latime: 200cm</p>
+											<p>Inaltime: 250cm</p>
+										</div>
+										<div>
+											<h3>Volum:</h3>
+											<p>10m3</p>
+											<h3>Depozitare:</h3>
+											<p>Mobila si bunuri din 1 – 2 camere</p>
+										</div>
+									</div>
+									<p class="price">2.00 lei / m2</p>
+									<a href="#preturi_form" title="Selectează oferta"><button class="action-button">Selectează</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="three">
+				<div class="container">
+					<h3>Caracteristicile principale ale boxelor noastre</h3>
+					<p>
+						Boxele de depozitoare sunt construite in interiorul halelor, sunt din lemn ignifug (osb), iar jos am turnat ciment, apoi nisip, apoi osb. Circularea
+						aerului este facuta intr-un mod natural; nu exista umezeala, mucegai, mirosuri etc. Deratizarea este facuta lunar!</p
+					>
+
+					<div id="diagram">
+						<img
+							src="/images/section_view.webp"
+							alt="poza cu sectiunea unei boxe. fiecare boxa are urmatoarea structura: nisip si beton la baza, constructie din lemn ignifug si sunt bine aerisite"
+						/>
+
+						<div class="description">
+							<div class="content">
+								<h4>Lemn ignifug</h4>
+								<p></p>
+								<div class="line"><span class="icon-arrow"></span></div>
+							</div>
+						</div>
+
+						<div class="description">
+							<div class="content">
+								<h4>Nisip</h4>
+								<p></p>
+								<div class="line"><span class="icon-arrow"></span></div>
+							</div>
+						</div>
+
+						<div class="description">
+							<div class="content">
+								<h4>Aerisere naturală</h4>
+								<p></p>
+								<div class="line">
+									<div class="special-dot">
+										<div class="mid-dot">
+											<div class="core-dot"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="description">
+							<div class="content">
+								<h4>Beton</h4>
+								<p></p>
+								<div class="line"><span class="icon-arrow"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="four">
+				<div class="container">
+					<h3>Contactează-ne</h3>
+					<p>Vrem să vă ajutăm în cel mai bun mod posibil.</p>
+					<form action="/email" method="POST" id="preturi_form">
+						<label for="preturi_nume">Nume si prenume / Name and surname</label>
+						<input required id="preturi_nume" type="text" name="nume" placeholder="Nume / Prenume" />
+						<label for="preturi_telefon">Telefon / Phone number</label>
+						<input required id="preturi_telefon" type="tel" name="telefon" placeholder="Telefon" />
+						<label for="preturi_email">Email</label>
+						<input required id="preturi_email" type="email" name="email" placeholder="Email" />
+						<label for="preturi_txt">Scrie un mesaj / Write a message</label>
+						<textarea id="preturi_txt" name="mesaj" cols="30" rows="10" placeholder="Mesaj"></textarea>
+						<button class="action-button">Trimite cerere</button>
+					</form>
+				</div>
+				<img src="/images/box_bottom.webp" alt="Poza decorativa cu o boxa de lemn pentru depozitare" />
+			</section>
+		</main>
+
+		<%-include('partials/footer')%>
+
+		<script src="/desktop/scripts/preturi.js"></script>
+		<script src="/desktop/scripts/partials.js"></script>
+	</body>
+</html>

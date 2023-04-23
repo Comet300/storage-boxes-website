@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon1.eot?ltldzh');
+  src:  url('../fonts/icomoon1.eot?ltldzh#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon1.ttf?ltldzh') format('truetype'),
+    url('../fonts/icomoon1.woff?ltldzh') format('woff'),
+    url('../fonts/icomoon1.svg?ltldzh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bleach:before {
+  content: "\e925";
+}
+.icon-hours:before {
+  content: "\e900";
+}
+.icon-arrow:before {
+  content: "\e901";
+}
+.icon-badge_orange:before {
+  content: "\e902";
+}
+.icon-box:before {
+  content: "\e903";
+}
+.icon-box_lock:before {
+  content: "\e904";
+}
+.icon-camera:before {
+  content: "\e905";
+}
+.icon-clock:before {
+  content: "\e906";
+}
+.icon-delivery:before {
+  content: "\e907";
+}
+.icon-delivery_truck:before {
+  content: "\e908";
+}
+.icon-envelope:before {
+  content: "\e909";
+}
+.icon-facebook:before {
+  content: "\e90a";
+}
+.icon-fast_box:before {
+  content: "\e90b";
+}
+.icon-fire_protection:before {
+  content: "\e90c";
+}
+.icon-four:before {
+  content: "\e90d";
+}
+.icon-gfive:before {
+  content: "\e90e";
+}
+.icon-hand_box:before {
+  content: "\e90f";
+}
+.icon-hand_box_white:before {
+  content: "\e910";
+}
+.icon-hand_key:before {
+  content: "\e911";
+}
+.icon-hand_price:before {
+  content: "\e912";
+}
+.icon-instagram:before {
+  content: "\e913";
+}
+.icon-like:before {
+  content: "\e914";
+}
+.icon-linkedin:before {
+  content: "\e915";
+}
+.icon-mail_footer:before {
+  content: "\e916";
+}
+.icon-man_1:before {
+  content: "\e917";
+}
+.icon-man_2:before {
+  content: "\e918";
+}
+.icon-one:before {
+  content: "\e919";
+}
+.icon-phone:before {
+  content: "\e91a";
+}
+.icon-pn:before {
+  content: "\e91b";
+}
+.icon-shield:before {
+  content: "\e91c";
+}
+.icon-six:before {
+  content: "\e91d";
+}
+.icon-support:before {
+  content: "\e91e";
+}
+.icon-three:before {
+  content: "\e91f";
+}
+.icon-tick:before {
+  content: "\e920";
+}
+.icon-tools:before {
+  content: "\e921";
+}
+.icon-two:before {
+  content: "\e922";
+}
+.icon-umbrella:before {
+  content: "\e923";
+}
+.icon-x_mark:before {
+  content: "\e924";
+}

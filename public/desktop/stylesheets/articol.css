@@ -1,0 +1,53 @@
+#map div {
+	width: max-content;
+}
+
+#one #text {
+	max-width: 755px;
+	padding-top: 55px;
+	padding-bottom: 46px;
+}
+
+#one #text h3 {
+	color: #22262e;
+	font-size: 1.125rem;
+	line-height: 1.563rem;
+	font-weight: 700;
+	margin-bottom: calc(23px - 1.563rem / 2);
+}
+
+#one #text p {
+	line-height: 1.5rem;
+	color: #252a4b;
+	margin-bottom: calc(27px - 1.5rem / 2);
+}
+
+#one {
+	position: relative;
+	max-width: 1440px;
+	width: 100%;
+	margin: unset;
+}
+
+.abs {
+	position: absolute;
+	top: -44px;
+	right: 0;
+	height: 100%;
+}
+
+.image-right {
+	width: 426px;
+	height: 733px;
+	position: sticky;
+	top: 80px;
+	right: 0;
+	overflow: hidden;
+}
+.image-right img{
+    height: 100%;
+    object-fit: cover;	
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

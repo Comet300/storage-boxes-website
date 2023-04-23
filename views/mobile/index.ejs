@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include('partials/head')%>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "boxe-depozitare.ro",
+            "item": "https://www.boxe-depozitare.ro/"
+          }]
+        }
+        </script>
+
+    <link rel="stylesheet" href="/icons/icons.css">
+    <link rel="stylesheet" href="/mobile/stylesheets/partials.css">
+    <link rel="stylesheet" href="/mobile/stylesheets/index.css">
+</head>
+
+<body onload="bindObservers()">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-ID" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <%-include('partials/navbar')%>
+        <%-include('partials/cookie')%>
+            <%-include('partials/formConfirm.ejs')%>
+                <main>
+                    <div id="whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=+01231234123" title="Scrie-ne pe whastapp"><img src="/images/wapp.webp"
+                                width="56" height="56"
+                                alt="Buton care duce catre whatsapp-ul nostru / A button to our whatsapp"></a>
+                    </div>
+                    <section id="one">
+
+                        <div class="container">
+                            <h1>
+                                <span class="oneLine"><span class="icon-tick"></span>
+                                    <div>500x Boxe diferite in interiorul halei</div>
+                                </span>
+                                <span class="oneLine"><span class="icon-tick"></span>
+                                    <div>Conditii excelente!</div>
+                                </span>
+                                <span class="oneLine"><span class="icon-tick"></span>
+                                    <div>Deschidere din telefon</div>
+                                </span>
+                            </h1>
+                            <p>Aveți nevoie să depozitați mobilă și/sau bunuri pentru o perioadă scurtă sau lungă de
+                                timp?</p>
+                            <form action="/email" method="POST">
+                                <label for="index_name">Nume si prenume / Name and surname</label>
+                                <input required id="index_name" type="text" spellcheck="false" name="nume"
+                                    placeholder="Nume / Prenume">
+
+                                <label for="index_tel">Telefon / Phone number</label>
+                                <input required id="index_tel" type="tel" spellcheck="false" name="telefon"
+                                    placeholder="Telefon">
+
+                                <label for="index_email">Email</label>
+                                <input required id="index_email" type="email" spellcheck="false" name="email"
+                                    placeholder="Email">
+
+                                <label for="text_form1">Scrie un mesaj / Write a message</label>
+                                <textarea id="text_form1" name="mesaj" cols="30" rows="10"
+                                    placeholder="Mesaj"></textarea>
+
+                                <button class="action-button">Trimite Comanda</button>
+                            </form>
+                        </div>
+
+                        <img id="box-right"
+                            alt="Imagine de fundal cu o boxa de lemn ignifug asemeni celor din depozitele noastre"
+                            src="/images/box.webp">
+                    </section>
+
+                    <section id="prezentare">
+                        <h4>
+                            Despre închiriere boxe
+                        </h4>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=212&href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F286034788974197%2F&show_text=false&width=560&t=0" width="560" height="212" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        <h4>
+                            Despre mutări mobilă și diverse
+                        </h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/__NeP0RqACU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </section>
+
+                    <section id="two">
+                        <h2>Cine suntem si ce facem?</h2>
+
+                        <p>Cauți un loc unde să vă păstrezi lucrurile pentru o vreme? Sau cauți o soluție de
+                            depozitare în condiții sigure?
+                            <span class="highlight">BoxeDepozitare.ro</span> va ofera contracte de
+                            inchiriere pe
+                            termen scurt sau lung, la cele mai avantajoase preturi. Puteti opta pentru boxe
+                            depozitare de
+                            dimensiuni reduse sau puteti inchiria boxe mai mari in care sa depozitati mobila si
+                            diferite
+                            lucruri personale. Putem chiar oferi și 2 sau mai multe boxe una lângă cealaltă, fără pereți
+                            despărțitori.
+                        </p>
+                        <p>Vrei să știi cine suntem? <a class="anchor_highlight" title="Interviuri Stocări"
+                                href="https://www.Stocări.ro/interviuri/">Click aici</a> ca să ne cunoști mai bine!
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=+01231234123" title="Scrie-ne pe whatsapp"><button
+                                class="action-button">Contactează-ne</button></a>
+
+
+                        <div id="scroll-animation">
+                            <div class="item">
+                                <div class="icon">
+                                    <span class="icon-delivery_truck"></span>
+                                </div>
+                                <p>
+                                    Ne contactati si estimăm împreună spațiul de depozitare
+                                </p>
+                                <div class="dot">
+                                    <div class="dot-core"></div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon">
+                                    <span class="icon-support"></span>
+                                </div>
+                                <p>
+                                    Aduceti lucrurile sau apelati la serviciul nostru de mutari
+                                </p>
+                                <div class="dot">
+                                    <div class="dot-core"></div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon">
+                                    <span class="icon-box_lock"></span>
+                                </div>
+                                <p>
+                                    Noi depozitam si avem grija ca lucrurile dvs sa fie in siguranta
+                                </p>
+                                <div class="dot">
+                                    <div class="dot-core"></div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon">
+                                    <span class="icon-hand_box"></span>
+                                </div>
+                                <p>
+                                    Va puteti oricand ridica lucrurile sau apelati la serviciul nostru de mutari
+                                </p>
+                                <div class="dot">
+                                    <div class="dot-core"></div>
+                                </div>
+                            </div>
+
+                            <div class="lines">
+                                <div class="hide">
+                                    <div class="active"></div>
+                                </div>
+                                <div class="disabled"></div>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                    <section id="three">
+                        <div class="container">
+                            <h3>Flexibilitate maximă</h3>
+                            <p> Oferim soluții de stocare la cerere, cu servicii complete. Optional, putem prelua
+                                articolele pe care doriți să le stocați și să vi le livrăm înapoi atunci când aveți
+                                nevoie de ele. </p>
+                            <p>Va oferim duba gratuit pentru achizitia celui mai mic pachet, respectiv 2 angajati x 4
+                                ore x 50 lei = 400 lei. Pentru un volum mai mare de obiecte de mutat in boxa putem
+                                suplimenta echipa cu personal specializat</p>
+                            <p>Activitatile prestate sunt: demontare-montare orice tip de mobilier, impachetare,
+                                transport, protectie cu folie</p>
+                            <p>Dacă preferați să aduceți singuri articolele la depozitul nostru - nicio problemă!
+                                Locatiile noastre sunt ușor accesibile cu mașina. Puteți parca și descărca mașina
+                                gratuit în parcările noastre. În plus, este ușor de accesat cu mijloacele de transport
+                                în comun sau chiar cu TIR-ul.</p>
+                            <p class="highlight">Acces NON STOP din telefon!</p>
+                        </div>
+
+                        <div id="car-animation">
+
+                            <div id="moveable-car"></div>
+
+                            <div class="lines">
+                                <div class="hide">
+                                    <div class="active"></div>
+                                </div>
+                                <div class="disabled"></div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="four">
+                        <div class="container">
+                            <h3>Boxele de depozitare în care puteți avea încredere!</h3>
+                            <p>Clientii nostri sunt atat persoane fizice si persoane juridice in
+                                cautarea unor
+                                spatii de depozitat care sa le ofere in primul rand siguranta obiectelor lasate in
+                                grija
+                                noastra.
+                            </p>
+
+                            <div class="grid">
+
+                                <div class="cell">
+                                    <div class="content">
+                                        <span class="icon-pn"></span>
+                                        <p>Ușor de ajuns, Sector 6, lângă metrou Păcii</p>
+                                    </div>
+                                </div>
+
+                                <div class="cell">
+                                    <div class="content">
+                                        <span class="icon-clock"></span>
+                                        <p>Posibilitatea vizionarii depozitului oricând doriți Dvs.</p>
+                                    </div>
+                                </div>
+
+                                <div class="cell">
+                                    <div class="content">
+                                        <span class="icon-fire_protection"></span>
+                                        <p>Boxele sunt special amenajate din lemn ignifug, iar jos avem beton+nisip,
+                                            apoi OSB.
+                                            Nu
+                                            există umezeală</p>
+                                    </div>
+                                </div>
+
+                                <div class="cell">
+                                    <div class="content">
+                                        <span class="icon-like"></span>
+                                        <p>Condiții foarte bune de păstrare a celor mai sensibile bunuri!</p>
+                                    </div>
+                                </div>
+
+                                <div class="cell">
+                                    <div class="content">
+                                        <span class="icon-hours"></span>
+                                        <p>Acces 24/7 in incintele noastre securizate unde doar tu ai cheia de la
+                                            boxa
+                                            inchiriată.</p>
+                                    </div>
+                                </div>
+
+                                <div class="cell">
+                                    <div class="content">
+                                        <span class="icon-tools"></span>
+                                        <p>Administrăm un atelier de restaurare mobila de arta pe care o depozitam in
+                                            boxe.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--
+                <div id="car-animation">
+
+                    <div id="moveable-car"></div>
+    
+                    <div class="lines">
+                        <div class="hide">
+                            <div class="active"></div>
+                        </div>
+                        <div class="disabled"></div>
+                    </div>
+                </div>
+            -->
+                            <div id="pickup-track">
+                                <div class="pickup">
+                                    <div class="car"></div>
+                                    <div class="lines">
+                                        <div class="disabled"></div>
+                                    </div>
+                                </div>
+                                <a href="https://api.whatsapp.com/send?phone=+01231234123" title="Scrie-ne pe whastapp"><button
+                                        class="action-button">Contactează-ne</button></a>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section id="five">
+                        <h3>De ce peste 1500 clienti ne-au ales pe noi?</h3>
+                        <p>Oferim boxe curate si uscate in care iti poti depozita, in deplina siguranta, pe termen scurt
+                            sau lung, bunurile personale din locuinta, firma, restaurant, cafenea, bar, atelier,
+                            service, cabinet medical, magazin, etc. </p>
+                        <p>
+                        <ul>
+                            <li>Oferim o gama variata de boxe in functie de nevoi. </li>
+                            <li>Acest serviciu de inchiriere spatii depozitare in sector 6, Bucuresti oferit de firma
+                                noastra face parte din grupul de firme administrate de noi, respectiv atelier de
+                                restaurare mobila de arta si mutari mobilier cu zeci de mii de client in portofoliu. In
+                                tot acesta perioada am depozitat de la cele mai fragile obiecte de patrimoniu cultural
+                                pana la utilaje profesionale.</li>
+                            <li>In prezent avem peste 250 clienti si zilnic vin client noi.</li>
+                            <li>La cererea clientului putem oferi si acces la camerele de supraveghere cu user si
+                                parola.</li>
+                            <li>Contractul se poate rezilia la cererea clientului chiar si cu 1 ora inainte de a-si
+                                ridica lucrurile.</li>
+                            <li>Procedura de inchiriere depozit este simpla si rapida astfel incat vei putea utiliza
+                                imediat spatiul.</li>
+                        </ul>
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=+01231234123" title="Scrie-ne pe whatsapp"><button
+                                class="action-button">Contactează-ne</button></a>
+
+                        <div>
+
+                            <div class="item">
+                                <span class="icon-hand_key"></span>
+                                <div>
+                                    <h4>Închiriere simpla și rapida</h4>
+                                    <p>Contractare online, plata cu cardul direct de pe factură. Perioada minimă de
+                                        închiriere
+                                        este de la o singură zi, la cât doriți dvs.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <span class="icon-camera"></span>
+                                <div>
+                                    <h4>Sisteme de monitorizare moderne</h4>
+                                    <p>Incinte monitorizate video 24/7</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <span class="icon-pn"></span>
+                                <div>
+                                    <h4>Locații accesibile</h4>
+                                    <p>Depozitele noastre sunt amplasate strategic la jumatatea distantei intre centru
+                                        si
+                                        soseaua de centura.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <span class="icon-delivery_truck"></span>
+                                <div>
+                                    <h4>Asigurăm transport</h4>
+                                    <p>Te putem ajută cu servicii de transport și încărcarea/descărcarea bunurilor tale
+                                        în
+                                        depozitele noastre.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section id="six">
+                        <div class="container">
+                            <p>Primește <span class="highlight">5% reducere</span> la plata pentru 6 luni în avans!</p>
+                            <p>Primește <span class="highlight">10% reducere</span> la plata pentru 12 luni în avans!
+                            </p>
+                        </div>
+
+                        <div class="graphics">
+
+                            <div class="fivePercent">
+                                <div class="wrap"><img src="/images/5percent.webp" width="79.313" height="54"
+                                        alt="5% reducere la plata pentru 6 luni în avans!"></div>
+                            </div>
+                            <div class="mid-slash">
+                                <div class="afterFive"></div>
+                                <div class="beforeTen"></div>
+                            </div>
+                            <div class="tenPercent">
+                                <div class="wrap"><img src="/images/10percent.webp" width="119.281" height="68"
+                                        alt="10% reducere la plata pentru 12 luni în avans!"></div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <section id="seven">
+                        <div class="container">
+
+                            <h3>Sfaturi și sugestii</h3>
+                            <div id="controls">
+                                <a href="/sfaturi" title="Sfaturi">Mai multe</a>
+                                <div>
+                                    <span class="icon-arrow" onclick="bindPrevArticle()"></span>
+                                    <span class="icon-arrow" onclick="bindNextArticle()"></span>
+                                </div>
+                            </div>
+
+                            <div id="slideshow">
+                                <%let articles=data.articles%>
+                                    <%for(let i=0;i<articles.length;i++){%>
+                                        <%let continut=JSON.parse(articles[i].continut)%>
+                                            <%if(i!=0){%>
+                                                <div class="article">
+                                                    <%}else{%>
+                                                        <div class="article visible">
+                                                            <%}%>
+                                                                <div class="image">
+                                                                    <img src="/<%=articles[i].imagine%>" width="312"
+                                                                        height="313.516"
+                                                                        alt="Imagine cu boxe de cartol pentru depozitare pentru articol">
+                                                                </div>
+                                                                <div class="hide">
+                                                                    <%=i%>
+                                                                </div>
+                                                                <h4>
+                                                                    <%=continut.div[0].h2%>
+                                                                </h4>
+                                                                <p>
+                                                                    <%=continut.div[0].p%>
+                                                                </p>
+                                                                <p>
+                                                                    <%=continut.div[1].p%>
+                                                                </p>
+                                                                <a href="/sfaturi/<%=articles[i].id2%>" title="<%=continut.div[0].h2%>">Citește mai
+                                                                    mult</a>
+                                                        </div>
+                                                        <%}%>
+                                                </div>
+                            </div>
+                    </section>
+                </main>
+
+                <%-include('partials/footer')%>
+
+                    <script src="/mobile/scripts/partials.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+                    <script src="/mobile/scripts/index.js"></script>
+</body>
+
+</html>

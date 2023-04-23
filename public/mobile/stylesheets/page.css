@@ -1,0 +1,44 @@
+#one{
+    margin: 0 16px;
+}
+
+#map div{
+    width:max-content;
+}
+
+#one>h1, #one > h2,#one > h3{
+	color: #22262e;
+	font-size: 1.125rem;
+	line-height: 1.563rem;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+#one > h1{
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin-top: 60px;
+    margin-bottom: 23px;
+}
+
+
+#one > p{
+    line-height: 1.5rem;
+    color: #252a4b;
+    margin-bottom: calc(27px - 1.5rem / 2);
+    text-indent: 15px;
+}
+
+#one > p > a {
+    font-weight: 600;
+    color: #336bd7;
+    text-decoration: none;
+}
+
+#one img{
+    width: 100%;
+}
+
+strong{
+    font-weight: 600;
+}

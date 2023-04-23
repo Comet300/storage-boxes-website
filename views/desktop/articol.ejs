@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%-include('partials/head')%>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "boxe-depozitare.ro",
+						"item": "https://www.boxe-depozitare.ro/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "sfaturi",
+						"item": "https://www.boxe-depozitare.ro/sfaturi"
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"name": "<%=idArticol%>",
+						"item": "https://www.boxe-depozitare.ro/sfaturi/<%=idArticol%>"
+					}
+				]
+			}
+		</script>
+
+		<link rel="stylesheet" href="/desktop/stylesheets/partials.css" />
+		<link rel="stylesheet" href="/desktop/stylesheets/articol.css" />
+		<link rel="stylesheet" href="/icons/icons.css" />
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-ID" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<%-include('partials/navbar')%> <%-include('partials/cookie')%> 
+		<%let content=JSON.parse(article.continut)%>
+		<main>
+			<section id="map">
+				<div>
+					<a href="/" title="Acasa">Acasa</a>
+					<span class="icon-arrow"></span>
+					<a href="/sfaturi" title="Sfaturi și sugestii">Sfaturi și sugestii</a>
+					<span class="icon-arrow"></span>
+					<p> <%=content.div[0].h2%> </p>
+				</div>
+			</section>
+
+			<section id="one">
+				<div class="container">
+					<div id="text">
+						<%content.div.forEach(item=>{%>
+						<div>
+							<h3> <%=item.h2%> </h3>
+							<p> <%=item.p%> </p>
+						</div>
+						<%})%>
+					</div>
+				</div>
+
+				<div class="abs">
+					<div class="image-right">
+						<img src="/<%=article.imagine%>" alt="imagine articol" />
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<%-include('partials/footer')%>
+
+		<script src="/desktop/scripts/article.js"></script>
+		<script src="/desktop/scripts/partials.js"></script>
+	</body>
+</html>

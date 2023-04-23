@@ -1,0 +1,50 @@
+#map div {
+	width: max-content;
+}
+
+#one > h1,
+#one > h2,
+#one > h3 {
+	color: #22262e;
+	font-size: 1.125rem;
+	line-height: 1.563rem;
+	font-weight: 700;
+	margin-bottom: calc(23px - 1.563rem / 2);
+}
+
+#one > h1 {
+	font-size: 2rem;
+	line-height: 3.125rem;
+	margin-top: 60px;
+	margin-bottom: 23px;
+}
+
+#one > p {
+	line-height: 1.5rem;
+	color: #252a4b;
+	margin-bottom: calc(27px - 1.5rem / 2);
+	text-indent: 20px;
+}
+
+#one > p > a {
+	font-weight: 600;
+	color: #336bd7;
+	text-decoration: none;
+}
+
+#one img {
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+
+#one .image-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 50%;
+	grid-gap: 15px;
+}
+
+strong {
+	font-weight: 600;
+}

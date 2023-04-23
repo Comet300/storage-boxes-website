@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%-include('partials/head')%>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "boxe-depozitare.ro",
+						"item": "https://www.boxe-depozitare.ro/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "galerie",
+						"item": "https://www.boxe-depozitare.ro/galerie"
+					}
+				]
+			}
+		</script>
+
+		<link rel="stylesheet" href="/desktop/stylesheets/partials.css" />
+		<link rel="stylesheet" href="/desktop/stylesheets/galerie.css" />
+		<link rel="stylesheet" href="/icons/icons.css" />
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-ID" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<%-include('partials/navbar')%> <%-include('partials/cookie')%>
+		<main>
+			<section id="map">
+				<div>
+					<a href="/" title="Acasa">Acasa</a>
+					<span class="icon-arrow"></span>
+					<p>Galerie</p>
+				</div>
+			</section>
+
+			<section id="one">
+				<h1>Galerie</h1>
+				<div id="gallery">
+					<div class="item">
+						<img src="/images/galerie1.webp" alt="boxe pentru depozitare" />
+						<div class="overlay">
+							<span class="icon-magnifying-glass"></span>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/galerie2.webp" alt="boxe pentru depozitare" />
+						<div class="overlay">
+							<span class="icon-magnifying-glass"></span>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/galerie3.webp" alt="boxe pentru depozitare" />
+						<div class="overlay">
+							<span class="icon-magnifying-glass"></span>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/galerie4.webp" alt="boxe pentru depozitare" />
+						<div class="overlay">
+							<span class="icon-magnifying-glass"></span>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/galerie5.webp" alt="boxe pentru depozitare" />
+						<div class="overlay">
+							<span class="icon-magnifying-glass"></span>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/galerie6.webp" alt="boxe pentru depozitare" />
+						<div class="overlay">
+							<span class="icon-magnifying-glass"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div id="galleryModal" class="hidden">
+			<div class="content">
+				<span class="icon-arrow left" id="prevImg"></span>
+				<div class="image">
+					<img src="/images/galerie1.webp" alt="imagine marita din galerie" />
+					<span class="icon-x_mark"></span>
+				</div>
+				<span class="icon-arrow right" id="nextImg"></span>
+			</div>
+		</div>
+
+		<%-include('partials/footer')%>
+
+		<script src="/desktop/scripts/galerie.js"></script>
+		<script src="/desktop/scripts/partials.js"></script>
+	</body>
+</html>
