@@ -2,7 +2,7 @@
 
 This project is meant to create an online presence for a local client, [boxe-depozitare.ro](https://boxe-depozitare.ro/) _<- live website_
 Built with vanilla HTML, CSS, JS along with the [EJS](https://ejs.co/) template engine and a Node.js server.
-One of my first projects written after learning the basics of web development.
+One of my first projects written after learning the basics of web development, around early 2019.
 
 #### Strenghts:
 - Was fun to build :)
