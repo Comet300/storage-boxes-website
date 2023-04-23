@@ -59,73 +59,73 @@ app.use(function (req, res, next) {
 	next();
 });
 
-// var connection = mysql.createConnection({
-// 	host: process.env.DB_HOST,
-// 	user: process.env.DB_USER,
-// 	password: process.env.DB_PASSWORD,
-// 	database: process.env.DB_DATABASE,
-// });
+var connection = mysql.createConnection({
+	host: process.env.DB_HOST,
+	user: process.env.DB_USER,
+	password: process.env.DB_PASSWORD,
+	database: process.env.DB_DATABASE,
+});
 
-// connection.connect();
+connection.connect();
 
-// const getQueryAsList = (query) => {
-// 	return new Promise(function (resolve, reject) {
-// 		connection.query(query, function (err, result, fields) {
-// 			if (!err) resolve(JSON.parse(JSON.stringify(result)));
-// 			// Hacky solution
-// 			else reject(err);
-// 		});
-// 	});
-// };
+const getQueryAsList = (query) => {
+	return new Promise(function (resolve, reject) {
+		connection.query(query, function (err, result, fields) {
+			if (!err) resolve(JSON.parse(JSON.stringify(result)));
+			// Hacky solution
+			else reject(err);
+		});
+	});
+};
 
-// const articles = getQueryAsList(`select * from articles order by id`);
+const articles = getQueryAsList(`select * from articles order by id`);
 
-// async function getNthArticlePage(n) {
-// 	return new Promise(function (resolve, reject) {
-// 		if (n <= 1) {
-// 			articles.then((articles) => {
-// 				let end = false;
-// 				let result = { articles: [], end: false };
-// 				if (articles.length - 1 < 0) end = true;
-// 				else result.articles.push(articles[0]);
+async function getNthArticlePage(n) {
+	return new Promise(function (resolve, reject) {
+		if (n <= 1) {
+			articles.then((articles) => {
+				let end = false;
+				let result = { articles: [], end: false };
+				if (articles.length - 1 < 0) end = true;
+				else result.articles.push(articles[0]);
 
-// 				if (articles.length - 1 < 1) end = true;
-// 				else result.articles.push(articles[1]);
+				if (articles.length - 1 < 1) end = true;
+				else result.articles.push(articles[1]);
 
-// 				if (articles.length - 1 == 0 || articles.length - 1 == 1) end = true;
+				if (articles.length - 1 == 0 || articles.length - 1 == 1) end = true;
 
-// 				result.end = end;
+				result.end = end;
 
-// 				resolve(result);
-// 			});
-// 		}
-// 		let e1 = 4 * n - 6;
-// 		let e2 = e1 + 1,
-// 			e3 = e1 + 2,
-// 			e4 = e1 + 3;
-// 		let result = { articles: [], end: false };
-// 		if (e1 > articles.length - 1) resolve(result);
-// 		let end = false;
-// 		articles.then((articles) => {
-// 			if (articles.length - 1 < e1) end = true;
-// 			else result.articles.push(articles[e1]);
+				resolve(result);
+			});
+		}
+		let e1 = 4 * n - 6;
+		let e2 = e1 + 1,
+			e3 = e1 + 2,
+			e4 = e1 + 3;
+		let result = { articles: [], end: false };
+		if (e1 > articles.length - 1) resolve(result);
+		let end = false;
+		articles.then((articles) => {
+			if (articles.length - 1 < e1) end = true;
+			else result.articles.push(articles[e1]);
 
-// 			if (articles.length - 1 < e2) end = true;
-// 			else result.articles.push(articles[e2]);
+			if (articles.length - 1 < e2) end = true;
+			else result.articles.push(articles[e2]);
 
-// 			if (articles.length - 1 < e3) end = true;
-// 			else result.articles.push(articles[e3]);
+			if (articles.length - 1 < e3) end = true;
+			else result.articles.push(articles[e3]);
 
-// 			if (articles.length - 1 < e4) end = true;
-// 			else result.articles.push(articles[e4]);
+			if (articles.length - 1 < e4) end = true;
+			else result.articles.push(articles[e4]);
 
-// 			if (articles.length - 1 == e4 || articles.length - 1 == e3 || articles.length - 1 == e2 || articles.length - 1 == e1) end = true;
+			if (articles.length - 1 == e4 || articles.length - 1 == e3 || articles.length - 1 == e2 || articles.length - 1 == e1) end = true;
 
-// 			result.end = end;
-// 			resolve(result);
-// 		});
-// 	});
-// }
+			result.end = end;
+			resolve(result);
+		});
+	});
+}
 
 async function getNextArticle(currentIndex) {
 	return new Promise(function (resolve, reject) {
